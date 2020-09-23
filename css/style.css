@@ -49,20 +49,20 @@ body {
 
 #inimigo2 {
     width: 165px;
-    height: 70px;
-    position: absolute;
-    left: 775px;
-    right: 447px;
-    background-image: url(../imgs/inimigo1.png);
+	height: 70px;
+	position: absolute;
+	left: 775px;
+	top: 447px;
+	background-image: url(../imgs/inimigo2.png);
 }
 
 #amigo {
     width: 44px;
-    height: 51px;
-    position: absolute;
-    left: 10px;
-    right: 464px;
-    background-image: url(../imgs/amigo.png);
+	height: 51px;
+	position: absolute;
+	left: 10px;
+	top: 464px;
+	background-image:url(../imgs/amigo.png);
 }
 
 #inicio{
@@ -74,4 +74,29 @@ body {
     margin-top: 100px;
     text-align: center;
     padding: 10px;
+}
+
+.anima1 {
+    background-image: url(../imgs/apache.png);
+    animation: play .1s steps(2) infinite;
+}
+
+.anima2 {
+    background-image: url(../imgs/inimigo1.png);
+    animation: play .1s steps(2) infinite;
+}
+
+@keyframes play {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
+
+.anima3 {
+    background-image: url(../imgs/amigo.png);
+    animation: play2 0.9s steps(12) infinite;
+}
+
+@keyframes play2 {
+    from {background-position: 0px;}
+    to {background-position: -528px;}
 }
